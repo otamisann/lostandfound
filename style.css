@@ -1,0 +1,8 @@
+.bg-ocean {
+background-color: #345da7;
+}
+.navbar {
+    height: 37px !important;
+    padding-top:10px !important; 
+    padding-bottom:10px !important;   
+}
