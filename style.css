@@ -1,8 +1,42 @@
+body,
+html {
+  height: 100%;
+}
 .bg-ocean {
-background-color: #345da7;
+  background-color: #0095a8;
 }
 .navbar {
-    height: 37px !important;
-    padding-top:10px !important; 
-    padding-bottom:10px !important;   
+  min-height: 1px !important;
+  padding-top: 1px !important;
+  padding-bottom: 1px !important;
+}
+.nav-item {
+  padding-right: 15px;
+  color: white;
+  font-weight: 600 !important;
+}
+.lato {
+  font-family: "Lato", sans-serif;
+}
+.lato-bold {
+  font-family: "Lato", sans-serif;
+  font-weight: 700;
+}
+.zrad {
+    border-radius: 6px;
+    border: solid 0px;
+    color: #13adc1;
+}
+.bg {
+    background: #345da7;
+  background-image: url(images/bg.jpg);
+  /* Half height */
+  height: 80%;
+  opacity: 9;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  
 }

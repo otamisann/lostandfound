@@ -6,7 +6,8 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>lost and found manila</title>
+    <link rel="icon" href="images/logo.png">
+    <title>lost and found</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
     <!-- <link href="bootstrap.min.css" rel="stylesheet"> -->
     <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
@@ -14,43 +15,101 @@
     <link rel="stylesheet" href="style.css">
 
     <style>
-            body {
-                font-family: 'Lato', sans-serif;
-            }
-          </style>
+        .body {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
 </head>
 <!-- end of Head -->
 <!-- Start of Body -->
 
 <body style="background-color: #e5eff5;">
     <!-- start here -->
-    <nav class="navbar navbar-expand-sm navbar-dark bg-ocean " style="font-weight: 800;">
-       <div class="container">
-            <a class="navbar-brand" href="#">Lost&Found manila</a>
-        <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor01"
-            aria-controls="navbarColor01" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-        </button>
-
-        <div class="collapse navbar-collapse" id="navbarColor01">
-            <ul class="navbar-nav ml-auto">
-                <li class="nav-item active">
-                    <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Features</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">Pricing</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">About</a>
-                </li>
-            </ul>
-            
+    <nav class="navbar navbar-expand-lg navbar-dark bg-ocean "
+        style="font-weight: bolder;font-size: 15px;line-height: 36px;">
+        <div class="container">
+            <div class="navbar-header pull-left">
+                <!-- <a class="navbar-brand" href="#" style="padding-bottom: 0px;padding-top: 0px;">Sign in</a> -->
+                <a class="nav-item" href="#">Sign Up </a>
+                <a class="nav-item" style="pointer-events: none;color: white;"> | </a>
+                <a class="nav-item" href="#">Log in </a>
+            </div>
+            <div class="navbar-header pull-right">
+                <a class="nav-item" href="#">Terms and Condition </a>
+                <a class="nav-item" href="#">Contact Us </a>
+            </div>
         </div>
-       </div>
     </nav>
+
+    <nav class="navbar navbar-expand-sm navbar-light ">
+        <div class="container">
+            <a class="navbar-brand" href="#">
+                <img src="images/logo.png" width="120" height="120" alt="">
+            </a>
+            <div class="navbar-header pull-right">
+                <button type="button" class="btn btn-outline-primary lato-bold zrad">Lost Items</button>
+                <button type="button" class="btn btn-outline-primary lato-bold zrad">Found Items</button>
+                <button type="button" class="btn btn-outline-primary lato-bold zrad">Report Found Item</button>
+                <button type="button" class="btn btn-outline-primary lato-bold zrad">Report Found Item</button>
+            </div>
+        </div>
+    </nav>
+
+    <div class="container">
+        <div class="row">
+            <div class="col-md-4">
+                <div class="card mb-3" >
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            <center>478</center>
+                        </h2>
+                        <h6 class="card-subtitle text-muted">
+                            <center>Lost Items</center>
+                        </h6>
+                    </div>
+                    <div class="card-body" style="padding: 0%;padding-bottom: 0;">
+                        <canvas id="myChart" height="120"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            <center>1627</center>
+                        </h2>
+                        <h6 class="card-subtitle text-muted">
+                            <center>Found Items</center>
+                        </h6>
+                    </div>
+                    <div class="card-body" style="padding: 0%;padding-bottom: 0;">
+                        <canvas id="myChart2" height="120"></canvas>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-4">
+                <div class="card mb-3">
+                    <div class="card-body">
+                        <h2 class="card-title">
+                            <center>487</center>
+                        </h2>
+                        <h6 class="card-subtitle text-muted">
+                            <center>Items found their owners</center>
+                        </h6>
+                    </div>
+                    <div class="card-body" style="padding: 0%;padding-bottom: 0;">
+                        <canvas id="myChart3" height="120"></canvas>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+
+
+
+
+
 
 
 
@@ -60,7 +119,7 @@
 <!-- end of Body -->
 <!-- scripts here -->
 <!-- custom js and cdn here -->
-<script src="customjs.js"></script>
+
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
@@ -68,7 +127,7 @@
 <script src="https://bootswatch.com/_vendor/popper.js/dist/umd/popper.min.js"></script>
 <script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
 <script src="https://bootswatch.com/_assets/js/custom.js"></script>
-
+<script src="customjs.js"></script>
 <script>
     $(function () {
 
