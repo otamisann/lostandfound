@@ -7,12 +7,13 @@
             datasets: [{
 
                 fill: false,
-                data: [12, 19, 3, 11, 15, 3, 8, 9],
+                data: [8, 23, 10, 2, 15, 8, 19, 9],
 
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
                     'rgba(255, 206, 86, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
                     'rgba(75, 192, 192, 0.2)',
                     'rgba(153, 102, 255, 0.2)',
                     'rgba(153, 102, 255, 0.2)',
@@ -20,14 +21,15 @@
                     'rgba(255, 159, 64, 0.2)'
                 ],
                 borderColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(255, 99, 132, 1)'
+                    'white',
+                    'white',
+                    'white',
+                    'white',
+                    'white',
+                    'white',
+                    'white',
+                    'white',
+                    'white'
                 ],
                 borderWidth: 4
             }]
@@ -78,27 +80,31 @@
     var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-            labels: ['', '', '', '', '', ''],
+            labels: ['', '', '', '', '', '', '', ''],
             datasets: [{
 
                 fill: false,
-                data: [12, 19, 3, 11, 15, 3],
+                data: [5, 19, 6, 2,8, 12,9,0],
 
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
                     'rgba(54, 162, 235, 0.2)',
                     'rgba(255, 206, 86, 0.2)',
                     'rgba(75, 192, 192, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
+                    'rgba(75, 192, 192, 0.2)',
                     'rgba(153, 102, 255, 0.2)',
                     'rgba(255, 159, 64, 0.2)'
                 ],
                 borderColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(255, 99, 132, 1)'
+                    'white',
+                    'white',
+                    'white',
+                    'white',
+                    'white',
+                    'white',
+                    'white',
+                    'white'
                 ],
                 borderWidth: 4
             }]
@@ -148,11 +154,11 @@
     var myChart = new Chart(ctx, {
         type: 'line',
         data: {
-            labels: ['', '', '', '', '', ''],
+            labels: ['', '', '', '', '', '', '', ''],
             datasets: [{
 
                 fill: false,
-                data: [12, 19, 3, 11, 15, 3],
+                data: [12, 19, 3, 11, 5,9,19,6],
 
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
@@ -160,15 +166,19 @@
                     'rgba(255, 206, 86, 0.2)',
                     'rgba(75, 192, 192, 0.2)',
                     'rgba(153, 102, 255, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
+                    'rgba(153, 102, 255, 0.2)',
                     'rgba(255, 159, 64, 0.2)'
                 ],
                 borderColor: [
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(255, 99, 132, 1)',
-                    'rgba(255, 99, 132, 1)'
+                    'white',
+                    'white',
+                    'white',
+                    'white',
+                    'white',
+                    'white',
+                    'white',
+                    'white'
                 ],
                 borderWidth: 4
             }]

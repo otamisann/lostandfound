@@ -7,112 +7,245 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <link rel="icon" href="images/logo.png">
-    <title>lost and found</title>
+    <title>Found 'em</title>
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/ea47e0bdbf.js"></script>
     <!-- <link href="bootstrap.min.css" rel="stylesheet"> -->
-    <link href="https://fonts.googleapis.com/css?family=Lato:400,700&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Lato|PT+Sans&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.css" />
     <link rel="stylesheet" href="style.css">
 
     <style>
         .body {
             font-family: 'Lato', sans-serif;
+
         }
     </style>
 </head>
 <!-- end of Head -->
 <!-- Start of Body -->
 
-<body style="background-color: #e5eff5;">
+<body style="background-color:white;">
     <!-- start here -->
-    <nav class="navbar navbar-expand-lg navbar-dark bg-ocean "
-        style="font-weight: bolder;font-size: 15px;line-height: 36px;">
-        <div class="container">
-            <div class="navbar-header pull-left">
-                <!-- <a class="navbar-brand" href="#" style="padding-bottom: 0px;padding-top: 0px;">Sign in</a> -->
-                <a class="nav-item" href="#">Sign Up </a>
-                <a class="nav-item" style="pointer-events: none;color: white;"> | </a>
-                <a class="nav-item" href="#">Log in </a>
-            </div>
-            <div class="navbar-header pull-right">
-                <a class="nav-item" href="#">Terms and Condition </a>
-                <a class="nav-item" href="#">Contact Us </a>
-            </div>
-        </div>
-    </nav>
+    <br>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-weight:bold;">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                Found 'em</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
+                aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse pt-b" id="navbarColor03">
+                <ul class="navbar-nav ml-auto ">
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Terms & Conditions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="#">Contact Us</a>
+                    </li>
+                    <li>
+                        <a class="nav-link" href="#"></a>
+                        <a class="nav-link" href="#"></a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="#"><i class="fas fa-lock"></i> Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <button type="button" class="btn btn-primary"
+                            style="border-radius: 6px;font-weight:bold;background-color: #28bfd8;border:none;">Sign
+                            Up</button>
+                    </li>
+                </ul>
 
-    <nav class="navbar navbar-expand-sm navbar-light ">
+            </div>
+        </nav>
+        <br>
+        <br>
         <div class="container">
-            <a class="navbar-brand" href="#">
-                <img src="images/logo.png" width="120" height="120" alt="">
-            </a>
-            <div class="navbar-header pull-right">
-                <button type="button" class="btn btn-outline-primary lato-bold zrad">Lost Items</button>
-                <button type="button" class="btn btn-outline-primary lato-bold zrad">Found Items</button>
-                <button type="button" class="btn btn-outline-primary lato-bold zrad">Report Found Item</button>
-                <button type="button" class="btn btn-outline-primary lato-bold zrad">Report Found Item</button>
+            <div class="row">
+                <div class="col-md-6" style="">
+                    <h1 style="font-size: 72px;color: rgb(46, 46, 46)">Looking For Something? Find It Here.</h6>
+                        <br>
+                        <blockquote class="blockquote">
+                            <p class="mb-0"><i class="fas fa-quote-left"></i> Honesty is more than not lying. It is
+                                truth telling, truth speaking, truth living, and truth loving.<i
+                                    class="fas fa-quote-right"></i></p>
+                            <footer class="blockquote-footer"> James E Faust </footer>
+                        </blockquote>
+                        <button type="button" class="btn btn-secondary shadow-lg p-3 mb-5 rounded">I Lost
+                            Something</button>
+                        <button type="button" class="btn btn-secondary shadow-lg p-3 mb-5 rounded"
+                            style="background-color: #28bfd8;">I Found
+                            Something</button>
+                        <br>
+                </div>
+                <div class="col-md-6">
+                    <br>
+                    <img src="https://avocode.com/static/images/microsites/zeplin-alternative/avoeater.png" alt=""
+                        style="max-width: 100%;">
+                </div>
             </div>
         </div>
-    </nav>
+    </div>
+    <!-- end of container -->
+    <br>
+    <br>
 
     <div class="container">
         <div class="row">
-            <div class="col-md-4">
-                <div class="card mb-3" >
-                    <div class="card-body">
-                        <h2 class="card-title">
-                            <center>478</center>
-                        </h2>
-                        <h6 class="card-subtitle text-muted">
-                            <center>Lost Items</center>
-                        </h6>
+            <div class="container">
+                <div class="row">
+                    <!-- style="background-color: #f0f0f0;padding: 50px 30px;" -->
+                    <div class="col-sm-4">
+                        <div class="card mb-3 shadow p-3 mb-5 bg-white rounded"
+                            style="background-image: linear-gradient(to top left, #2fc998,#167bff);">
+                            <div class="card-body">
+                                <h2 class="card-title">
+                                    <center>478</center>
+                                </h2>
+                                <h6 class="card-subtitle ">
+                                    <center>Lost Items</center>
+                                </h6>
+                            </div>
+                            <div class="card-body" style="padding: 0%;padding-bottom: 0;">
+                                <canvas id="myChart" height="120"></canvas>
+                            </div>
+                        </div>
                     </div>
-                    <div class="card-body" style="padding: 0%;padding-bottom: 0;">
-                        <canvas id="myChart" height="120"></canvas>
+                    <div class="col-sm-4">
+                        <div class="card mb-3 shadow p-3 mb-5 bg-white rounded"
+                            style="background-image: linear-gradient(to top left, #36d1dc,#5b86e5);">
+                            <div class="card-body ">
+                                <h2 class="card-title">
+                                    <center>1627</center>
+                                </h2>
+                                <h6 class="card-subtitle">
+                                    <center>Found Items</center>
+                                </h6>
+                            </div>
+                            <div class="card-body" style="padding: 0%;padding-bottom: 0;">
+                                <canvas id="myChart2" height="120"></canvas>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-sm-4">
+                        <div class="card mb-3 shadow p-3 mb-5 bg-white rounded"
+                            style="background-image: linear-gradient(to top left, #9164ff,#8bfff4);">
+                            <div class="card-body">
+                                <h2 class="card-title">
+                                    <center>487</center>
+                                </h2>
+                                <h6 class="card-subtitle">
+                                    <center>Items found their owners</center>
+                                </h6>
+                            </div>
+                            <div class="card-body" style="padding: 0%;padding-bottom: 0;">
+                                <canvas id="myChart3" height="120"></canvas>
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <div class="container">
+        <div class="bs-docs-section">
+            <div class="page-header">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <h4 id="buttons">Recently Lost Items</h4>
                     </div>
                 </div>
             </div>
-            <div class="col-md-4">
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h2 class="card-title">
-                            <center>1627</center>
-                        </h2>
-                        <h6 class="card-subtitle text-muted">
-                            <center>Found Items</center>
-                        </h6>
+        </div>
+    </div>
+    <!-- cards -->
+    <!-- recently lost items -->
+    <div class="container">
+        <div class="row mb-2">
+
+            <div class="col-md-6 border-info">
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Electronics</strong>
+                        <h3 class="mb-0">IPhone 8 Plus</h3>
+                        <div class="mb-1 text-muted">June 6, 2019</div>
+                        <p class="card-text mb-auto">PUP Sta. Mesa - Main Building South Wing</p>
+                        <button type="button" class="btn btn-primary">View</button>
                     </div>
-                    <div class="card-body" style="padding: 0%;padding-bottom: 0;">
-                        <canvas id="myChart2" height="120"></canvas>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-3">
-                    <div class="card-body">
-                        <h2 class="card-title">
-                            <center>487</center>
-                        </h2>
-                        <h6 class="card-subtitle text-muted">
-                            <center>Items found their owners</center>
-                        </h6>
-                    </div>
-                    <div class="card-body" style="padding: 0%;padding-bottom: 0;">
-                        <canvas id="myChart3" height="120"></canvas>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="images/iphone8.jpg" height="270px" alt="">
                     </div>
                 </div>
             </div>
 
+            <div class="col-md-6">
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Money/Purse/Wallet</strong>
+                        <h3 class="mb-0">Gucci Wallet</h3>
+                        <div class="mb-1 text-muted">Nov 11,2018</div>
+                        <p class="mb-auto">SM Moa Bay</p>
+                        <button type="button" class="btn btn-primary">View</button>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="https://tshop.r10s.jp/deradera/cabinet/gucci/307987-cwc1r-1000_0.jpg?fitin=330:330"
+                            height="270px" alt="">
+                    </div>
+                </div>
+            </div>
         </div>
     </div>
 
 
 
 
-
-
-
-
+    <!-- footer -->
+    <div class="mt-5 pt-5 pb-5 footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-xs-12 about-company">
+                    <h2>Heading</h2>
+                    <p class="pr-5 text-white-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac
+                        ante mollis quam tristique convallis </p>
+                    <p><a href="#"><i class="fa fa-facebook-square mr-1"></i></a><a href="#"><i
+                                class="fa fa-linkedin-square"></i></a></p>
+                </div>
+                <div class="col-lg-3 col-xs-12 links">
+                    <h4 class="mt-lg-0 mt-sm-3">Links</h4>
+                    <ul class="m-0 p-0">
+                        <li>- <a href="#">Lorem ipsum</a></li>
+                        <li>- <a href="#">Nam mauris velit</a></li>
+                        <li>- <a href="#">Etiam vitae mauris</a></li>
+                        <li>- <a href="#">Fusce scelerisque</a></li>
+                        <li>- <a href="#">Sed faucibus</a></li>
+                        <li>- <a href="#">Mauris efficitur nulla</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-xs-12 location">
+                    <h4 class="mt-lg-0 mt-sm-4">Location</h4>
+                    <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
+                    <p class="mb-0"><i class="fa fa-phone mr-3"></i>(541) 754-3010</p>
+                    <p><i class="fa fa-envelope-o mr-3"></i>info@hsdf.com</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col copyright">
+                    <p class=""><small class="text-white-50">© 2019. All Rights Reserved.</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
 
 
 </body>

@@ -18,6 +18,13 @@ html {
 .lato {
   font-family: "Lato", sans-serif;
 }
+.pt {
+  font-family: 'PT Sans', sans-serif;
+}
+.pt-b {
+  font-family: 'PT Sans', sans-serif;
+  font-weight: bold;
+}
 .lato-bold {
   font-family: "Lato", sans-serif;
   font-weight: 700;
@@ -33,10 +40,72 @@ html {
   /* Half height */
   height: 80%;
   opacity: 9;
-
   /* Center and scale the image nicely */
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
   
 }
+.navbar.bg-light {
+  background-color: #fff !important;
+  border: none;
+}
+
+.container .row .col-md-6 .btn {
+  background-color: #EF424C;
+  border: none;
+  border-radius: 6px;
+  font-weight:bold;
+  height: 45px;
+  width: 45%;
+}
+.navbar-light .navbar-toggler {
+  color: rgba(0, 0, 0, 0.5);
+  border: none;
+}
+.footer{
+  background: #152F4F;
+  color:white;
+  
+  .links{
+    ul {list-style-type: none;}
+    li a{
+      color: white;
+      transition: color .2s;
+      &:hover{
+        text-decoration:none;
+        color:#4180CB;
+        }
+    }
+  }  
+  .about-company{
+    i{font-size: 25px;}
+    a{
+      color:white;
+      transition: color .2s;
+      &:hover{color:#4180CB}
+    }
+  } 
+  .location{
+    i{font-size: 18px;}
+  }
+  .copyright p{border-top:1px solid rgba(255,255,255,.1);} 
+}
+.row .col-sm-4 .card {
+  /* background-color: #f0f0f0; */
+  
+  border: none;
+  color: #fff;
+}
+.p-3 {
+  padding: 0 !important;
+}
+.row .container .col-md-6 .row .btn {
+  background-color: #EF424C;
+  border: none;
+  border-radius: 6px;
+}
+.row.no-gutters.border.rounded.overflow-hidden.flex-md-row.mb-4.shadow-sm.h-md-250.position-relative {
+  border: solid 2px #f8f0ee !important;
+}
+
