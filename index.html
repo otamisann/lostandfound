@@ -37,31 +37,31 @@
                 aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
                 <span><i class="fas fa-bars"></i></span>
             </button>
+
             <div class="collapse navbar-collapse pt-b" id="navbarColor03">
                 <ul class="navbar-nav ml-auto">
-                    <li class="nav-item">
-                        <a class="nav-link" href="#">Home <span class="sr-only">(current)</span></a>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Terms & Conditions</a>
+                        <a class="nav-link" href="error-404.html">Terms & Conditions</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="#">Contact Us</a>
+                        <a class="nav-link" href="error-404.html">Contact Us</a>
                     </li>
                     <!-- <li>
-                        <a class="nav-link" href="#"></a>
-                        <a class="nav-link" href="#"></a>
-                    </li> -->
+                                        <a class="nav-link" href="#"></a>
+                                        <a class="nav-link" href="#"></a>
+                                    </li> -->
                     <li class="nav-item">
-                        <a class="nav-link active" href="#"><i class="fas fa-lock"></i>  Login</a>
+                        <a class="nav-link active" href="error-404.html"><i class="fas fa-lock"></i> Login</a>
                     </li>
                     <li class="nav-item">
-                        <button type="button" class="btn btn-primary"
-                            style="border-radius: 6px;font-weight:bold;background-color: #28bfd8;border:none;">Sign
-                            Up</button>
+                        <input type="button" class="btn btn-primary"
+                            style="border-radius: 6px;font-weight:bold;background-color: #28bfd8;border:none;"
+                            onclick="location.href='error-404.html'" value="Sign up" />
                     </li>
                 </ul>
-
             </div>
         </nav>
         <br>
@@ -77,11 +77,11 @@
                                     class="fas fa-quote-right"></i></p>
                             <footer class="blockquote-footer"> James E Faust </footer>
                         </blockquote>
-                        <button type="button" class="btn btn-secondary shadow-lg p-3 mb-5 rounded">I Lost
-                            Something</button>
-                        <button type="button" class="btn btn-secondary shadow-lg p-3 mb-5 rounded"
-                            style="background-color: #28bfd8;">I Found
-                            Something</button>
+                        <input type="button" class="btn btn-secondary shadow-lg p-3 mb-5 rounded"
+                            onclick="location.href='error-404.html'" value="I Lost Something">
+                        <input type="button" class="btn btn-secondary shadow-lg p-3 mb-5 rounded"
+                            style="background-color: #28bfd8;" onclick="location.href='error-404.html'"
+                            value="I Found Something">
                         <br>
                 </div>
                 <div class="col-md-6">
@@ -160,14 +160,18 @@
         <div class="bs-docs-section">
             <div class="page-header">
                 <div class="row">
-                    <div class="col-lg-12">
+                    <div class="col-9">
                         <h4 id="buttons">Recently Lost Items</h4>
+                    </div>
+                    <div class="col-3 lato-bold">
+                        <a href="error-404.html">VIEW ALL</a>
                     </div>
                 </div>
             </div>
         </div>
     </div>
     <!-- cards -->
+    <br>
     <!-- recently lost items -->
     <div class="container">
         <div class="row mb-2">
@@ -179,7 +183,67 @@
                         <strong class="d-inline-block mb-2 text-primary">Electronics</strong>
                         <h3 class="mb-0">IPhone 8 Plus</h3>
                         <div class="mb-1 text-muted">June 6, 2019</div>
-                        <p class="card-text mb-auto">PUP Sta. Mesa - Main Building South Wing</p>
+                        <p class="card-text mb-auto pt">PUP Sta. Mesa - Main Building South Wing</p>
+                        <button type="button" class="btn btn-primary">View</button>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="images/iphone8.jpg" height="270px" alt="">
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-6">
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-success">Money/Purse/Wallet</strong>
+                        <h3 class="mb-0">Titi ni Eron</h3>
+                        <div class="mb-1 text-muted">Nov 11,2018</div>
+                        <p class="mb-auto pt">Wala syang ganon</p>
+                        <button type="button" class="btn btn-primary">View</button>
+                    </div>
+                    <div class="col-auto d-none d-lg-block">
+                        <img src="https://tshop.r10s.jp/deradera/cabinet/gucci/307987-cwc1r-1000_0.jpg?fitin=330:330"
+                            height="270px" alt="">
+                    </div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </div>
+    <!-- end of recently lost -->
+
+    <!-- recently found -->
+    <div class="container">
+        <div class="bs-docs-section">
+            <div class="page-header">
+                <div class="row">
+                    <div class="col-9">
+                        <h4 id="buttons">Recently Found Items</h4>
+                    </div>
+                    <div class="col-3 lato-bold">
+                        <a href="error-404.html">VIEW ALL  </a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!-- cards -->
+    <br>
+    <!-- recently found items -->
+    <div class="container">
+        <div class="row mb-2">
+
+            <div class="col-md-6 border-info">
+                <div
+                    class="row no-gutters border rounded overflow-hidden flex-md-row mb-4 shadow-sm h-md-250 position-relative">
+                    <div class="col p-4 d-flex flex-column position-static">
+                        <strong class="d-inline-block mb-2 text-primary">Electronics</strong>
+                        <h3 class="mb-0">IPhone 8 Plus</h3>
+                        <div class="mb-1 text-muted">June 6, 2019</div>
+                        <p class="card-text mb-auto pt">PUP Sta. Mesa - Main Building South Wing</p>
                         <button type="button" class="btn btn-primary">View</button>
                     </div>
                     <div class="col-auto d-none d-lg-block">
@@ -195,7 +259,7 @@
                         <strong class="d-inline-block mb-2 text-success">Money/Purse/Wallet</strong>
                         <h3 class="mb-0">Gucci Wallet</h3>
                         <div class="mb-1 text-muted">Nov 11,2018</div>
-                        <p class="mb-auto">SM Moa Bay</p>
+                        <p class="mb-auto pt">Bahay nila Bomar</p>
                         <button type="button" class="btn btn-primary">View</button>
                     </div>
                     <div class="col-auto d-none d-lg-block">
@@ -204,6 +268,9 @@
                     </div>
                 </div>
             </div>
+
+
+
         </div>
     </div>
 

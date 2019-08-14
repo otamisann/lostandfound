@@ -84,7 +84,7 @@
             datasets: [{
 
                 fill: false,
-                data: [5, 19, 6, 2,8, 12,9,0],
+                data: [5, 19, 6, 2,17, 7,10,16],
 
                 backgroundColor: [
                     'rgba(255, 99, 132, 0.2)',
