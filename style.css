@@ -109,4 +109,10 @@ html {
 .row.no-gutters.border.rounded.overflow-hidden.flex-md-row.mb-4.shadow-sm.h-md-250.position-relative {
   border: solid 2px #f8f0ee !important;
 }
+.l {
+  border-radius: 6px;
+  font-weight:bold;
+  background-color: #2d3440 !important;
+  border:none !important;
+}
 

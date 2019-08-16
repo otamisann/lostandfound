@@ -1,4 +1,11 @@
+<?php
+include_once 'includes/conn.php';
 
+echo '<br><div class="container"><div id="myalert" class="alert alert-dismissible collapse alert-success">
+<button type="button" class="close" data-dismiss="alert">&times;</button>
+<strong>Connected!</strong> Database connected.
+</div></div>';
+?>
 <!DOCTYPE html>
 <html lang="en">
 <!-- Head starts here, styling etc. -->
@@ -28,14 +35,12 @@
 
 <body style="background-color:white;">
     <!-- start here -->
-    <br>
     <div class="container">
         <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-weight:bold;">
             <a class="navbar-brand" href="index.html">
                 <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
                 Can't Found 'em</a>
-            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
-                aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03" aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
                 <span><i class="fas fa-bars"></i></span>
             </button>
 
@@ -63,24 +68,21 @@
                 <div class="col-md-6">
                     <h1 style="font-size: 72px;color: rgb(46, 46, 46)">Error 404</h1>
                     <h3 style="color: rgb(46, 46, 46)">Page not found</h3>
-                        <br>
-                        <blockquote class="blockquote">
-                            <p class="mb-0"><i class="fas fa-quote-left"></i> It's ironic that you cant FIND this page
-                                lol.<i class="fas fa-quote-right"></i></p>
-                            <footer class="blockquote-footer"> Developers </footer>
-                        </blockquote>
-                        <br>
+                    <br>
+                    <blockquote class="blockquote">
+                        <p class="mb-0"><i class="fas fa-quote-left"></i> It's ironic that you cant FIND this page
+                            lol.<i class="fas fa-quote-right"></i></p>
+                        <footer class="blockquote-footer"> Develasdassdsdsdfsdoper</footer>
+                    </blockquote>
+                    <br>
 
-                        <input type="button" class="btn btn-secondary shadow-lg p-3 mb-5 rounded"
-                            style="background-color: #28bfd8;" onclick="location.href='index.html'"
-                            value="Go back to Homepage" />
-                        <br>
+                    <input type="button" class="btn btn-secondary shadow-lg p-3 mb-5 rounded" style="background-color: #28bfd8;" onclick="location.href='index.html'" value="Go back to Homepage" />
+                    <br>
                 </div>
 
                 <div class="col-md-6">
                     <br>
-                    <img src="https://avocode.com/static/images/microsites/zeplin-alternative/avoeater.png" alt=""
-                        style="max-width: 100%;">
+                    <img src="https://avocode.com/static/images/microsites/zeplin-alternative/avoeater.png" alt="" style="max-width: 100%;">
                 </div>
             </div>
         </div>
@@ -103,7 +105,11 @@
 <script src="https://bootswatch.com/_assets/js/custom.js"></script>
 <script src="customjs.js"></script>
 <script>
-    $(function () {
+    $(function() {
+        $('#myalert').show('fade');
+        $('#myalert').delay('1500');
+        $('#myalert').hide('fade');
+
 
     });
 </script>

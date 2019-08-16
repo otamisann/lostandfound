@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head starts here, styling etc. -->
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="images/logo.png">
+    <title>Found 'em</title>
+
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/ea47e0bdbf.js"></script>
+    <!-- <link href="bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Lato|PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.css" />
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" /> -->
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap4.css">
+
+    <style>
+        .body {
+            font-family: 'Lato', sans-serif;
+
+        }
+    </style>
+</head>
+<!-- end of Head -->
+<!-- Start of Body -->
+
+<body style="background-color:white;">
+    <!-- start here -->
+    <br>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-weight:bold;">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                Found 'em</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
+                aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fas fa-bars"></i></span>
+            </button>
+
+            <div class="collapse navbar-collapse pt-b" id="navbarColor03">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="error-404.html">Terms & Conditions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="error-404.html">Contact Us</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="error-404.html">Lost Items</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="index.html">Found Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="error-404.html">Report Lost Item</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="error-404.html">Report Found Item</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="error-404.html"><i class="fas fa-lock"></i> Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <input type="button" class="btn btn-primary"
+                            style="border-radius: 6px;font-weight:bold;background-color: #28bfd8;border:none;"
+                            onclick="location.href='error-404.html'" value="Sign up" />
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+        <!-- end of nav -->
+        <!-- alert -->
+        <br>
+
+        <!-- end of alert -->
+
+        <div class="bs-docs-section">
+            <div class="page-header">
+                <div class="row">
+                    <div class="col-5">
+                        <h4 class="lato-bold">Found Items</h4>
+                    </div>
+                    <div class="col-7">
+                        <div id="alertlost" class="alert alert-dismissible collapse  alert-info">
+                            <button id="alertlostdis" type="button" class="close" data-dismiss="alert">&times;</button>
+                            <strong>Heads up!</strong> Before you declare a lost item, try to find it on our Found
+                            Items.
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <br>
+
+        <!-- tables -->
+        <table id="example" class="table table-hover table-bordered" style="width:100%">
+            <thead>
+                <tr>
+                    <th data-priority="1">Image</th>
+                    <th >Name</th>
+                    <th>Category</th>
+                    <th >Where</th>
+                    <th >When</th>
+                    <th data-priority="2">Option</th>
+                </tr>
+            </thead>
+            <tbody class="lato">
+                <tr>
+                    <td>
+                        <center><img
+                                src="https://tshop.r10s.jp/deradera/cabinet/gucci/307987-cwc1r-1000_0.jpg?fitin=330:330"
+                                style="max-height: 80px;max-width: 100%;" alt=""></center>
+                    </td>
+                    <td>Gucci Wallet</td>
+                    <td>Money/Purse/Wallet</td>
+                    <td>PUP Manila</td>
+                    <td>nov 12, 2018</td>
+                    <td>
+                        <center>
+                            <input type="button" class="btn btn-secondary"
+                                style="background-color: #EF424C;border: none;" onclick="location.href='error-404.html'"
+                                value="View">
+                        </center>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <center><img
+                                src="https://tshop.r10s.jp/deradera/cabinet/gucci/307987-cwc1r-1000_0.jpg?fitin=330:330"
+                                style="max-height: 80px;max-width: 100%;" alt=""></center>
+                    </td>
+                    <td>Gucci Wallet</td>
+                    <td>Money/Purse/Wallet</td>
+                    <td>PUP Manila</td>
+                    <td>nov 12, 2018</td>
+                    <td>
+                        <center>
+                            <input type="button" class="btn btn-secondary"
+                                style="background-color: #EF424C;border: none;" onclick="location.href='error-404.html'"
+                                value="View">
+                        </center>
+                    </td>
+                </tr>
+            </tbody>
+        </table>
+    </div>
+    <br>
+    <div class="container">
+
+
+        <div class="row">
+            <div class="col-12">
+                <center> <button type="button" class="btn btn-outline-info btn-lg">I can't find my lost item</button>
+                </center>
+            </div>
+        </div>
+
+
+    </div>
+    <!-- end of container -->
+    <!-- footer -->
+    <div class="mt-5 pt-5 pb-5 footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-5 col-xs-12 about-company">
+                    <h2>Heading</h2>
+                    <p class="pr-5 text-white-50">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nullam ac
+                        ante mollis quam tristique convallis </p>
+                    <p><a href="#"><i class="fa fa-facebook-square mr-1"></i></a><a href="#"><i
+                                class="fa fa-linkedin-square"></i></a></p>
+                </div>
+                <div class="col-lg-3 col-xs-12 links">
+                    <h4 class="mt-lg-0 mt-sm-3">Links</h4>
+                    <ul class="m-0 p-0">
+                        <li>- <a href="#">Lorem ipsum</a></li>
+                        <li>- <a href="#">Nam mauris velit</a></li>
+                        <li>- <a href="#">Etiam vitae mauris</a></li>
+                        <li>- <a href="#">Fusce scelerisque</a></li>
+                        <li>- <a href="#">Sed faucibus</a></li>
+                        <li>- <a href="#">Mauris efficitur nulla</a></li>
+                    </ul>
+                </div>
+                <div class="col-lg-4 col-xs-12 location">
+                    <h4 class="mt-lg-0 mt-sm-4">Location</h4>
+                    <p>22, Lorem ipsum dolor, consectetur adipiscing</p>
+                    <p class="mb-0"><i class="fa fa-phone mr-3"></i>(541) 754-3010</p>
+                    <p><i class="fa fa-envelope-o mr-3"></i>info@hsdf.com</p>
+                </div>
+            </div>
+            <div class="row mt-5">
+                <div class="col copyright">
+                    <p class=""><small class="text-white-50">© 2019. All Rights Reserved.</small></p>
+                </div>
+            </div>
+        </div>
+    </div>
+    </div>
+
+</body>
+<!-- end of Body -->
+<!-- scripts here -->
+<!-- custom js and cdn here -->
+<script src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js"></script>
+
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/jquery.dataTables.min.js"></script>
+<script type="text/javascript" src="https://cdn.datatables.net/1.10.19/js/dataTables.bootstrap4.min.js"></script>
+
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+<script src="https://bootswatch.com/_vendor/popper.js/dist/umd/popper.min.js"></script>
+<script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="https://bootswatch.com/_assets/js/custom.js"></script>
+<script src="customjs.js"></script>
+<script>
+
+    $(function () {
+        $('#example').DataTable({
+            
+            columnDefs: [
+                { responsivePriority: 1, targets: 0 },
+                { responsivePriority: 2, targets: -1 },
+               
+
+            ]
+        });
+        $('#alertlost').show('fade');
+        $('#alertlost').delay('20000');
+        $('#alertlost').hide('fade');
+    });
+
+</script>
+
+<!-- end of script -->
+
+</html>
