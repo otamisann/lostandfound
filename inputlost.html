@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- Head starts here, styling etc. -->
+
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="icon" href="images/logo.png">
+    <title>Found 'em</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" rel="stylesheet" />
+    <script src="https://kit.fontawesome.com/ea47e0bdbf.js"></script>
+    <!-- <link href="bootstrap.min.css" rel="stylesheet"> -->
+    <link href="https://fonts.googleapis.com/css?family=Lato|PT+Sans&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://bootswatch.com/4/litera/bootstrap.css" />
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" type="text/css"
+        href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" />
+    <link rel="stylesheet" type="text/css"
+        href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" /> -->
+    <link rel="stylesheet" href="bootstrap.css">
+    <link rel="stylesheet" href="bootstrap4.css">
+
+    <style>
+        .body {
+            font-family: 'Lato', sans-serif;
+        }
+    </style>
+</head>
+<!-- end of Head -->
+<!-- Start of Body -->
+
+<body>
+    <!-- start here -->
+    <br>
+    <div class="container">
+        <nav class="navbar navbar-expand-lg navbar-light bg-light" style="font-weight:bold;">
+            <a class="navbar-brand" href="index.html">
+                <img src="images/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+                Found 'em</a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarColor03"
+                aria-controls="navbarColor03" aria-expanded="false" aria-label="Toggle navigation">
+                <span><i class="fas fa-bars"></i></span>
+            </button>
+            <div class="collapse navbar-collapse pt-b" id="navbarColor03">
+                <ul class="navbar-nav ml-auto">
+                    <li class="nav-item">
+                        <a class="nav-link" href="index.html">Home</a>
+                    </li>
+                    <!-- <li class="nav-item">
+                        <a class="nav-link" href="error-404.html">Terms & Conditions</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="error-404.html">Contact Us</a>
+                    </li> -->
+                    <li class="nav-item">
+                        <a class="nav-link" href="found-something.html">Lost Items</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="lost-something.html">Found Items</a>
+                    </li>
+                    <li class="nav-item active">
+                        <a class="nav-link" href="#">Report Lost Item</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link" href="error-404.html">Report Found Item</a>
+                    </li>
+                    <li class="nav-item">
+                        <a class="nav-link active" href="error-404.html"><i class="fas fa-lock"></i> Login</a>
+                    </li>
+                    <li class="nav-item">
+                        <input type="button" class="btn btn-primary"
+                            style="border-radius: 6px;font-weight:bold;background-color: #28bfd8;border:none;"
+                            onclick="location.href='error-404.html'" value="Sign up" />
+                    </li>
+                </ul>
+            </div>
+        </nav>
+
+    </div>
+    <br>
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <h2 class="lato-bold" style="text-align: center;">Report Lost Item</h2>
+            </div>
+        </div>
+    </div>
+    <br>
+    <div class="container">
+        <div class="rosw">
+            <form class="needs-validation" novalidate>
+
+                <div class="form-row">
+                    
+                    <!-- what -->
+                    <div class="col-sm-3">
+                        <h3 for="validationCustom01" class="lato">What have you lost?</h3>
+                    </div>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control form-control-lg" autocomplete="off" id="validationCustom01"
+                            placeholder="Name of the Item/Person" required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="col-sm-4">
+                        <select class="custom-select browser-default form-control-lg" required>
+                            <option value="">Select Category</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <div class="invalid-feedback">Please choose category</div>
+                    </div>
+                </div>
+                <br>
+                <!-- where -->
+                <div class="form-row">
+                        <div class="col-sm-3">
+                                <h3 for="validationCustom02" class="lato">Where did you lose it?</h3>
+                        </div>
+                    <div class="col-sm-4">
+                        <select class="custom-select browser-default form-control form-control-lg" required>
+                            <option value="">Select Place</option>
+                            <option value="1">One</option>
+                            <option value="2">Two</option>
+                            <option value="3">Three</option>
+                        </select>
+                        <div class="invalid-feedback">Please choose category</div>
+                    </div>
+                    <br>
+                    <br>
+                    <div class="col-sm-5">
+                        <input type="text" class="form-control form-control-lg" id="validationCustom01" autocomplete="off" placeholder="Type Exact Place"
+                            required>
+                        <div class="valid-feedback">
+                            Looks good!
+                        </div>
+                    </div>
+                </div>
+                <!-- when -->
+                <br>
+                <br>
+                <!-- <div class="form-row">
+                    <div class="col-sm-3">
+                        <h3 class="lato">When did you lose it?</h3>
+                    </div>
+                    <div class="col-sm-9">
+                            <input type="text" name="date" id="date" class="datepicker form-control form-control-lg" value="" required />
+                            <div class="invalid-feedback">Please select a valid date.</div>
+                    </div>
+                </div> -->
+                <div class="md-form">
+                        <input class="form-control datepicker" placeholder="Selected date" type="text" id="date-picker-example" >
+                        <label for="date-picker-example">Try me...</label>
+                      </div>
+
+
+
+                <button class="btn btn-primary btn-sm" type="submit">Submit form</button>
+            </form>
+        </div>
+    </div>
+
+
+
+
+
+</body>
+<!-- end of Body -->
+<!-- scripts here -->
+<!-- custom js and cdn here -->
+<script src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js"></script>
+<script src="customjs.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
+
+<script src="https://bootswatch.com/_vendor/popper.js/dist/umd/popper.min.js"></script>
+<script src="https://bootswatch.com/_vendor/bootstrap/dist/js/bootstrap.min.js"></script>
+<script src="https://bootswatch.com/_assets/js/custom.js"></script>
+
+
+<script>
+   
+    
+    
+ $(document).ready(function() {
+// Data Picker Initialization
+(function () {
+        'use strict';
+        window.addEventListener('load', function () {
+            // Fetch all the forms we want to apply custom Bootstrap validation styles to
+            var forms = document.getElementsByClassName('needs-validation');
+            // Loop over them and prevent submission
+            var validation = Array.prototype.filter.call(forms, function (form) {
+                form.addEventListener('submit', function (event) {
+                    if (form.checkValidity() === false) {
+                        event.preventDefault();
+                        event.stopPropagation();
+                    }
+                    form.classList.add('was-validated');
+                }, false);
+            });
+        }, false);
+    })();
+$('.datepicker').pickadate();
+});
+</script>
+
+<!-- end of script -->
+
+</html>
