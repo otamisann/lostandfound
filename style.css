@@ -115,4 +115,16 @@ html {
   background-color: #2d3440 !important;
   border:none !important;
 }
+input[type=checkbox]
+{
+  transform: scale(2.5) !important;
+  zoom: 2.5 !important;
 
+}
+.form-control {
+  color: #939598 !important;
+  border: solid 1px #e5e5e5 !important;
+}
+.was-validated .form-control:invalid, .form-control.is-invalid, .was-validated .custom-select:invalid, .custom-select.is-invalid {
+  border-color: #dc3545 !important;
+}
