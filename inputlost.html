@@ -18,7 +18,9 @@
 	<!-- <link rel="stylesheet" type="text/css"
         href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.1.3/css/bootstrap.css" />
     <link rel="stylesheet" type="text/css"
-    href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" /> -->
+	href="https://cdn.datatables.net/1.10.19/css/dataTables.bootstrap4.min.css" /> -->
+	<link rel="stylesheet" href="datepicker.css">
+	<link rel="stylesheet" href="dropify.min.css">
 	<link rel="stylesheet" href="bootstrap.css">
 	<link rel="stylesheet" href="bootstrap4.css">
 
@@ -99,9 +101,9 @@
 						<h3 for="validationCustom01" style="font-size: 30px;color: rgb(46, 46, 46)">What have you lost?
 						</h3>
 					</div>
-					<div class="col-sm-4">
+					<div class="col-sm-5">
 						<input type="text" class="form-control form-control-lg" autocomplete="off"
-							id="validationCustom01" placeholder="Name of the Item/Person" required>
+							id="validationCustom01" placeholder="Name of the Item/Animal/Brand/Person" required>
 						<div class="valid-feedback">
 							Looks good!
 						</div>
@@ -109,12 +111,25 @@
 					<br>
 					<br>
 					<br>
-					<div class="col-sm-4">
+					<div class="col-sm-3">
 						<select class="form-control form-control-lg" required>
 							<option value="">Select Category</option>
-							<option value="1">One</option>
-							<option value="2">Two</option>
-							<option value="3">Three</option>
+							<option value="1">Animals/Pet</option>
+							<option value="1">Bags/Baggage/Luggage</option>
+							<option value="1">Clothing</option>
+							<option value="1">Electronics/Phone/Tablets/Laptop</option>
+							<option value="1">Jewelry</option>
+							<option value="1">Literature/Books/Diaries/Letters</option>
+							<option value="1">Mail/Parsels</option>
+							<option value="1">Money/Wallet/Purse/Cheque</option>
+							<option value="1">Musical Equipments</option>
+							<option value="1">Personal Accessories/Documents</option>
+							<option value="1">Sporting Goods</option>
+							<option value="1">Tools</option>
+							<option value="1">Toys</option>
+							<option value="1">Visual Arts Related(Antiques,Drawing,Paintings,Sculptures)</option>
+							<option value="1"></option>
+							
 						</select>
 						<div class="invalid-feedback">Please choose category</div>
 					</div>
@@ -129,9 +144,22 @@
 					<div class="col-sm-4">
 						<select class="form-control form-control-lg" required>
 							<option value="">Select Place</option>
-							<option value="1">One</option>
-							<option value="2">Two</option>
-							<option value="3">Three</option>
+							<option value="1">Bar/Club</option>
+							<option value="1">Beach</option>
+							<option value="1">Building/Office Space</option>
+							<option value="1">Bus/Jeep/Bus Stop</option>
+							<option value="1">Carpark/Parking Lot</option>
+							<option value="1">Concert Hall/Stadium/Arena/Oval</option>
+							<option value="1">Gas Station</option>
+							<option value="1">Market</option>
+							<option value="1">Mall</option>
+							<option value="1">Park</option>
+							<option value="1">Pool/</option>
+							<option value="1">School/University</option>
+							<option value="1">Shop/Shopping Center</option>
+							<option value="1">Street</option>
+							<option value="1">Train/Train Station</option>
+							
 						</select>
 						<div class="invalid-feedback">Please choose category</div>
 					</div>
@@ -149,16 +177,24 @@
 				<!-- when -->
 				<br>
 
+
 				<div class="form-row">
 					<div class="col-sm-4">
 						<h3 style="font-size: 30px;color: rgb(46, 46, 46)">When did you lose it?</h3>
 					</div>
 					<div class="col-sm-8">
-						<input type="date" name="date" id="date" class="datepicker form-control form-control-lg"
+						<!-- <input type="date" name="date" id="date" class="datepicker form-control form-control-lg"
 							value="" required />
-						<div class="invalid-feedback">Please select a valid date.</div>
+						<div class="invalid-feedback">Please select a valid date.</div> -->
+						<div id="datepicker-popup" class="input-group date datepicker">
+							<input type="text" class="form-control form-control-lg" required>
+							<span class="input-group-addon ">
+							</span>
+						</div>
+						<div class="invalid-feedback">Please select a valid date.</div> 
 					</div>
 				</div>
+				<br>
 				<br>
 				<!-- reward -->
 				<div class="form-row">
@@ -186,8 +222,11 @@
 					</div>
 					<div class="col-sm-6">
 						<div class="custom-file">
-							<input type="file" class="custom-file-input" id="validatedCustomFile">
-							<label class="custom-file-label" for="validatedCustomFile">Choose file...</label>
+							<!-- <input type="file" class="custom-file-input" id="validatedCustomFile"> -->
+							<input type="file" id="demo" class="dropify">
+
+
+							<label class="custom-file-label" for="valiatedCustomFile">Choose file...</label>
 							<div class="invalid-feedback">Upload photo pls namna oh</div>
 						</div>
 					</div>
@@ -196,7 +235,7 @@
 				<br>
 				<div class="form-row">
 					<div class="col-sm-4">
-						<h3 style="font-size: 30px;color: rgb(46, 46, 46)">Item Details</h3>
+						<h3 style="font-size: 30px;color: rgb(46, 46, 46)">Item Description</h3>
 					</div>
 					<div class="col-sm-7">
 						<textarea class="form-control"
@@ -217,29 +256,28 @@
 							Looks good!
 						</div>
 						<br>
-						<input type="link" class="form-control form-control-lg" autocomplete="off"
+						<input type="link" class="form-control form-control-lg" autocomplete="off" required
 							placeholder="Link to your messenger account">
 						<div class="valid-feedback">
 							optional
 						</div>
 						<br>
-						<input type="number" class="form-control form-control-lg" autocomplete="off"
-							id="validationCustom01" value="09" placeholder="Phone" required >
+						<input type="number" maxlength="11" class="form-control form-control-lg" autocomplete="off"
+							id="validationCustom01" value="09" placeholder="Phone" required>
 						<div class="valid-feedback">
 							Looks good!
 						</div>
-						
+
 						<br>
 					</div>
 				</div>
-				<br>
-				<br>
+
 				<center>
 					<div class="form-group">
 						<div class="custom-control custom-checkbox">
 							<input type="checkbox" class="custom-control-input invalid" id="invalidCheck33" required>
 							<label class="custom-control-label lato" for="invalidCheck33"
-								style="font-size: 18px;font-weight: 600;">I agree that all my information were
+								style="font-size: 18px;font-weight: 100;">I agree that all my information were
 								true</label>
 							<div class="invalid-feedback">
 								You must agree before submitting.
@@ -251,22 +289,12 @@
 					</div>
 				</center>
 
-
-				<br>
-				<br>
 				<center>
 					<button class="btn btn-primary btn-lg" type="submit"
-						style="background-color: #28bfd8;border: none;">Submit form</button>
+						style="background-color: #28bfd8;border: none;">Report Lost Item</button>
 					<input type="button" class="btn btn-primary l btn-lg" style="background-color: #28bfd8;"
 						onclick="location.href='found-something.html'" value="Cancel">
 				</center>
-
-
-
-
-
-
-
 			</form>
 		</div>
 	</div>
@@ -317,6 +345,9 @@
 <!-- scripts here -->
 <!-- custom js and cdn here -->
 <script src="https://bootswatch.com/_vendor/jquery/dist/jquery.min.js"></script>
+<script src="datepicker.js"></script>
+<script src="dropify.js"></script>
+<script src="dropify.min.js"></script>
 <script src="customjs.js"></script>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.js"></script>
 <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"></script>
@@ -346,6 +377,8 @@
 			});
 		}, false);
 	})();
+	$('.dropify').dropify();
+
 	$('.datepicker').datepicker();
 
 </script>
